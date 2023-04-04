@@ -1,0 +1,76 @@
+.team {
+    background-color: var(--color-cloud);
+    padding-top: 111px;
+    padding-bottom: 129px;
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+    &__list {
+        display: flex;
+        gap: 24px;
+    }
+    &__img {
+        width: 264px;
+    }
+    &__summarizing {
+        /* padding: 32px 16px; */
+        background-color: var(--color-mega-white);
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__profesion {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__social-setings-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    &-social__link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--color-iris);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color var(--main-animation);
+
+        &:is(:hover, :focus) {
+            background-color: var(--color-ocean);
+        }
+    }
+    .social__logo {
+        content: '';
+        width: 16px;
+        height: 16px;
+        fill: var(--color-cloud);
+    }
+    
+}
+
+

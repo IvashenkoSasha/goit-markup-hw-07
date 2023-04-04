@@ -1,0 +1,120 @@
+.navigation__list {
+    display: none;
+}
+
+.address {
+    display: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-iris);
+    display: inline;
+    margin-right: 76px;
+
+    &--white-letters {
+        color: #F4F4FD;
+    }
+    &--black-letters {
+        color: var(--color-navy-blue);
+    }
+}
+
+.burger-button__icon {
+    width: 32px;
+    height:22px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    fill: var(--color-navy-blue);
+
+}
+
+
+
+// .navigation {
+//     display: flex;
+
+//     &__list {
+//         display: flex;
+//         gap: 40px;
+//     }
+//     &__link {
+//         font-family: 'Roboto';
+//         font-style: normal;
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 24px;
+//         letter-spacing: 0.02em;
+//         color: #2E2F42;
+//         transition: color var(--main-animation);
+        
+//         &--studio::after {
+//             margin-top: 20px;
+//             display: block;
+//             background: #404BBF;
+//             border-radius: 2px;
+//             width: 48px;
+//             height: 4px;
+//             content: "";
+//             position: absolute;
+//             color: var(--color-ocean);
+//         }
+        
+//         &--portfolio::after {
+//             margin-top: 20px;
+//             display: block;
+//             background: #404BBF;
+//             border-radius: 2px;
+//             width: 66px;
+//             height: 4px;
+//             content: "";
+//             position: absolute;
+//             color: var(--color-ocean);
+//         }
+
+//         &:is(:hover, :focus) {
+//             color: #404BBF;
+//         }
+    
+//     }
+
+// }
+
+// .address {
+
+//     &__list {
+//         display: flex;
+//     }
+    
+//     &__item:not(:last-child) {
+//         padding-right: 40px;
+//     }
+    
+//     &__link {
+//         font-size: 16px;
+//         line-height: 1.5;
+//         letter-spacing: 0.02em;
+//         color: #434455;
+//         transition: color var(--main-animation);
+
+        
+//         &:is(:hover, :focus) {
+//             color: #404BBF
+//         }
+//     }
+// }

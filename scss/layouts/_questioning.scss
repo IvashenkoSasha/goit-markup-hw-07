@@ -1,0 +1,20 @@
+.questioning {
+
+    &__container {
+        padding-bottom: 120px;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-bottom: 72px;
+    }
+    &__img-list {
+        display: flex;
+        gap: 24px;
+    }
+}

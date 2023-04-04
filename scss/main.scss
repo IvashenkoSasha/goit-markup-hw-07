@@ -1,0 +1,16 @@
+// utils
+@import './utils/vars';
+@import './utils/visually-hidden';
+// base
+@import './base/container';
+@import './base/reset';
+// components
+@import './components/main-btn';
+@import './components/social-links';
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/questioning';
+@import './layouts/team';
+@import './layouts/customers'
