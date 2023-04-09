@@ -1,6 +1,6 @@
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     &__title {
         font-size: 36px;
@@ -14,7 +14,9 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 24px;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 72px;
     }
     &__link {
         display: flex;

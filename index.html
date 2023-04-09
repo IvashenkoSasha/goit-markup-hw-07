@@ -19,7 +19,7 @@
 <body>
     <!----------------------------- HEADER ----------------------------->
     <header class="header">
-        <div class="navbar container">
+        <div class=" container navbar">
             <nav class="navigation">
                 <a href="./index.html" class="logo link">Web<span class="logo--black-letters">Studio</span>
                 </a>
@@ -35,10 +35,8 @@
                     </li>
                 </ul>
             </nav>
-            <button class="burger-button" type="button">
-                <svg class="burger-button__icon">
-                    <use href="./images/sprite.svg#icon-burger"></use>
-                </svg>
+            <button data-menu-open class="burger-button" type="button">
+                <img class="burger-button__icon" src="/images/mobile-images/burger-icon.svg" alt="burger-icon">
             </button>
             <address class="address">
                 <ul class="address__list list">
@@ -52,81 +50,139 @@
                 </ul>
             </address>
         </div>
+        <div data-menu class="mobile-menu is-hidden">
+            <div class="mobile-menu__container">
+                <button data-menu-close class="mobile-menu__close-btn" type="button">
+                    <svg class="modal-close">
+                        <use href="./images/sprite.svg#modal-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__navigation list">
+                    <li class="mobile-menu__navigation-item">
+                        <a href="" class="link mobile-menu__navigation-link">Studio</a>
+                    </li>
+                    <li class="mobile-menu__navigation-item">
+                        <a href="" class="link mobile-menu__navigation-link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu__navigation-item">
+                        <a href=""
+                            class="link mobile-menu__navigation-link mobile-menu__navigation-link--active">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="tel:+110001111111" class="link mobile-menu__contacts-number">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="" class="link mobile-menu__contacts-email">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-setings-list list">
+                    <li>
+                        <a href="" class="team-social__link">
+                            <svg class="mobile-menu__social-logo">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="team-social__link">
+                            <svg class="mobile-menu__social-logo">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="team-social__link">
+                            <svg class="mobile-menu__social-logo">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="" class="team-social__link">
+                            <svg class="mobile-menu__social-logo">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <!----------------------------- /HEADER ----------------------------->
 
     <!----------------------------- HERO ----------------------------->
-    <!-- <main>
-            <section class="hero">
-                <div class="container hero__container">
-                    <h1 class="hero__title">Effective Solutions
-                        for Your Business</h1>
-                    <button data-modal-open class="main-btn__hero main-btn" type="button">
-                        Order Service
-                    </button>
-                </div>
-            </section> -->
-    <!----------------------------- /HERO ----------------------------->
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Effective Solutions
+                    for Your Business</h1>
+                <button data-modal-open class="main-btn__hero main-btn" type="button">
+                    Order Service
+                </button>
+            </div>
+        </section>
+        <!----------------------------- /HERO ----------------------------->
 
-    <!----------------------------- BENEFITS ----------------------------->
-    <!-- <section class="benefits">
+        <!----------------------------- BENEFITS ----------------------------->
+        <section class="benefits">
+            <div class="container benefits__container">
+                <h2 class="benefits__title--hidden visually-hidden">our benefits</h2>
+                <ul class="benefits__list list">
+                    <li class="benefits__item">
+                        <div class="benefits__img-background">
+                            <svg class="benefits__logo">
+                                <use href="./images/sprite.svg#antenna-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Strategy</h3>
+                        <p class="benefits__text">Our goal is to identify the business
+                            problem to walk away with the perfect and creative solution. </p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__img-background">
+                            <svg class="benefits__logo">
+                                <use href="./images/sprite.svg#clock-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Punctuality</h3>
+                        <p class="benefits__text">Bring the key message to the brand's audience for the best price
+                            within
+                            the shortest possible
+                            time.</p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__img-background">
+                            <svg class="benefits__logo">
+                                <use href="./images/sprite.svg#diagram-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Diligence</h3>
+                        <p class="benefits__text">Research and confirm brands that present the strongest digital
+                            growth
+                            opportunities and minimize
+                            risk.</p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__img-background">
+                            <svg class="benefits__logo">
+                                <use href="./images/sprite.svg#astronaut-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Technologies</h3>
+                        <p class="benefits__text">Design practice focused on digital experiences. We bring forth a
+                            deep
+                            passion for
+                            problem-solving.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!----------------------------- /BENEFITS ----------------------------->
 
-                <div class="container benefits__container">
-                    <h2 class="benefits__title--hidden visually-hidden">our benefits</h2>
-                    <ul class="benefits__list list">
-                        <li class="benefits__item">
-                            <div class="benefits__img-background">
-                                <svg class="benefits__logo">
-                                    <use href="./images/sprite.svg#antenna-1"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__title">Strategy</h3>
-                            <p class="benefits__text">Our goal is to identify the business
-                                problem to walk away with the perfect and creative solution. </p>
-                        </li>
-                        <li class="benefits__item">
-                            <div class="benefits__img-background">
-                                <svg class="benefits__logo">
-                                    <use href="./images/sprite.svg#clock-1"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__title">Punctuality</h3>
-                            <p class="benefits__text">Bring the key message to the brand's audience for the best price
-                                within
-                                the shortest possible
-                                time.</p>
-                        </li>
-                        <li class="benefits__item">
-                            <div class="benefits__img-background">
-                                <svg class="benefits__logo">
-                                    <use href="./images/sprite.svg#diagram-1"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__title">Diligence</h3>
-                            <p class="benefits__text">Research and confirm brands that present the strongest digital
-                                growth
-                                opportunities and minimize
-                                risk.</p>
-                        </li>
-                        <li class="benefits__item">
-                            <div class="benefits__img-background">
-                                <svg class="benefits__logo">
-                                    <use href="./images/sprite.svg#astronaut-1"></use>
-                                </svg>
-                            </div>
-                            <h3 class="benefits__title">Technologies</h3>
-                            <p class="benefits__text">Design practice focused on digital experiences. We bring forth a
-                                deep
-                                passion for
-                                problem-solving.</p>
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
-    <!----------------------------- /BENEFITS ----------------------------->
-
-    <!----------------------------- WHAT ARE WE DOING ----------------------------->
-    <!-- <section class="questioning">
+        <!----------------------------- WHAT ARE WE DOING ----------------------------->
+        <section class="questioning">
                 <div class="questioning__container container">
                     <h2 class="questioning__title">What are we doing</h2>
                     <ul class="questioning__img-list list">
@@ -138,11 +194,11 @@
                                 width="360"></li>
                     </ul>
                 </div>
-            </section> -->
-    <!----------------------------- /WHAT ARE WE DOING ----------------------------->
+            </section>
+        <!----------------------------- /WHAT ARE WE DOING ----------------------------->
 
-    <!----------------------------- OUR TEAM ----------------------------->
-    <!-- <section class="team">
+        <!----------------------------- OUR TEAM ----------------------------->
+        <section class="team">
                 <div class="container">
                     <h2 class="team__title">Our Team</h2>
                     <ul class="team__list list">
@@ -297,11 +353,11 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
-    <!----------------------------- /OUR TEAM ----------------------------->
+            </section>
+        <!----------------------------- /OUR TEAM ----------------------------->
 
-    <!----------------------------- CUSTOMERS ----------------------------->
-    <!-- <section class="customers">
+        <!----------------------------- CUSTOMERS ----------------------------->
+        <section class="customers">
                 <div class="container">
                     <h3 class="customers__title">Customers</h3>
 
@@ -350,13 +406,13 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
-    <!----------------------------- /CUSTOMERS ----------------------------->
+            </section>
+        <!----------------------------- /CUSTOMERS ----------------------------->
     </main>
 
     <!----------------------------- FOOTER ----------------------------->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__information">
                     <a class="footer__logo link" href="./index.html">
@@ -366,7 +422,7 @@
                         marketing
                         & growth solutions.</p>
                 </div>
-                <div>
+                <div class="footer-social-container">
                     <h3 class="footer__title">Social media</h3>
                     <ul class="footer__media-list list">
                         <li >
@@ -411,12 +467,12 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
     <!----------------------------- /FOOTER ----------------------------->
 
     <!----------------------------- MODAL ----------------------------->
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <button data-modal-close class="modal-close-btn" type="button">
                     <svg class="modal-close">
@@ -474,11 +530,12 @@
                     <button class="form-submit-btn main-btn" type="submit">Send</button>
                 </form>
             </div>
-        </div> -->
+        </div>
     <!----------------------------- /MODAL ----------------------------->
 
     <!----------------------------- SCRIPTS ----------------------------->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

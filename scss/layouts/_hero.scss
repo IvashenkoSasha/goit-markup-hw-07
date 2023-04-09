@@ -1,35 +1,39 @@
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-images/mobile__hero-background.jpg);
     background-size: cover;
-
-
+    background-position: center;
+    
     &__container {
+        padding-top: 112px;
+        padding-bottom: 112px;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        padding-top: 188px;
-        padding-bottom: 188px;
+        align-items: center;
     }
     &__title {
-        font-size: 56px;
+        font-size: 36px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFFFFF;
         text-align: center;
-        width: 496px;
+        max-width: 320px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 48px;
     }
     .main-btn__hero {
         background-color: #4D5AE5;
+        display: block;
         padding: 16px 32px;
         &:is(:hover, :focus) {
-            background-color: #404BBF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
     }
 }
+
+
+
+
 
 // @media (min-device-pixel-ratio: 2),
 //   (min-resolution: 192dpi),

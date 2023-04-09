@@ -10,8 +10,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 16px;
 }
 
 .logo {
@@ -37,43 +36,28 @@
 .burger-button__icon {
     width: 32px;
     height:22px;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50% -50%);
     fill: var(--color-navy-blue);
-
+}
+.burger-button {
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    padding: 0;
 }
 
 
+.navigation {
+    display: flex;
+}
 
-// .navigation {
-//     display: flex;
+.mobile-menu {
+    display: none;
+}
 
-//     &__list {
-//         display: flex;
-//         gap: 40px;
-//     }
-//     &__link {
-//         font-family: 'Roboto';
-//         font-style: normal;
-//         font-weight: 500;
-//         font-size: 16px;
-//         line-height: 24px;
-//         letter-spacing: 0.02em;
-//         color: #2E2F42;
-//         transition: color var(--main-animation);
+    
+    // link 
         
-//         &--studio::after {
-//             margin-top: 20px;
-//             display: block;
-//             background: #404BBF;
-//             border-radius: 2px;
-//             width: 48px;
-//             height: 4px;
-//             content: "";
-//             position: absolute;
-//             color: var(--color-ocean);
-//         }
+//         &
         
 //         &--portfolio::after {
 //             margin-top: 20px;
@@ -105,13 +89,7 @@
 //         padding-right: 40px;
 //     }
     
-//     &__link {
-//         font-size: 16px;
-//         line-height: 1.5;
-//         letter-spacing: 0.02em;
-//         color: #434455;
-//         transition: color var(--main-animation);
-
+    
         
 //         &:is(:hover, :focus) {
 //             color: #404BBF
