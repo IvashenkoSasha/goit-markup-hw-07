@@ -374,7 +374,7 @@ body {
 
 .modal {
     position: absolute;
-    width: 408px;
+    width: 392px;
     min-height: 576px;
     background-color: var(--mega-white);
     top: 50%;
@@ -383,6 +383,16 @@ body {
     padding: 24px;
     scale: 1;
     transition: scale var(--main-animation);
+}
+
+.modal-form-checbox-text-wrapper {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .modal {
+        width: calc((100% - 36px));
+    }
 }
 
 .modal-close {
@@ -551,6 +561,7 @@ body {
     width: 169px;
     height: 56px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .modal-checkbox-icon-svg {

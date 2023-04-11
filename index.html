@@ -186,12 +186,24 @@
                 <div class="questioning__container container">
                     <h2 class="questioning__title">What are we doing</h2>
                     <ul class="questioning__img-list list">
-                        <li><img class="questioning__img" src="./images/what-are-we-doing/main-img1.jpg"
-                                alt="monitor with graphics" width="360"></li>
-                        <li><img class="questioning__img" src="./images/what-are-we-doing/main-img2.jpg"
-                                alt="phone with masager" width="360"></li>
-                        <li><img class="questioning__img" src="./images/what-are-we-doing/main-img3.jpg" alt="phone"
-                                width="360"></li>
+                        <li>
+                            <picture>
+                                <source srcset="./images/what-are-we-doing/main-img1@2x.jpg">
+                                <img class="questioning__img" src="./images/what-are-we-doing/main-img1.jpg" alt="monitor with graphics" width="360">
+                            </picture>
+                        </li>
+                        <li>
+                            <picture>
+                                <source srcset="./images/what-are-we-doing/main-img2@2x.jpg">
+                                <img class="questioning__img" src="./images/what-are-we-doing/main-img2.jpg" alt="phone with masager" width="360">
+                            </picture>
+                        </li>
+                        <li>
+                            <picture>
+                                <source srcset="./images/what-are-we-doing/main-img3@2x.jpg">
+                                <img class="questioning__img" src="./images/what-are-we-doing/main-img3.jpg" alt="phone" width="360">
+                            </picture>
+                            </li>
                     </ul>
                 </div>
             </section>
@@ -202,8 +214,11 @@
                 <div class="container">
                     <h2 class="team__title">Our Team</h2>
                     <ul class="team__list list">
-                        <li><img class="team__img" src="./images/our-team/OurT-img1.jpg"
-                                alt="men with beard">
+                        <li>
+                            <picture>
+                                <source srcset="./images/mobile-images/mobile__our-team-1@2x.jpg">
+                                <img class="team__img" src="./images/our-team/OurT-img1.jpg"alt="men with beard">
+                            </picture>
                             <div class="team__summarizing">
                                 <h3 class="team__name">Mark Guerrero</h3>
                                 <p class="team__profesion">Product Designer</p>
@@ -240,8 +255,10 @@
                             </div>
                         </li>
                         <li>
-                            <img class="team__img" src="./images/our-team/OurT-img2.jpg"
-                                alt="men with short beard">
+                            <picture>
+                                <source srcset="./images/mobile-images/mobile__our-team-2@2x.jpg">
+                                <img class="team__img" src="./images/our-team/OurT-img2.jpg"alt="men with short beard">    
+                            </picture>
                             <div class="team__summarizing">
                                 <h3 class="team__name">Tom Ford</h3>
                                 <p class="team__profesion">Frontend Developer</p>
@@ -277,8 +294,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><img class="team__img" src="./images/our-team/OurT-img3.jpg"
-                                alt="wooman">
+                        <li>
+                            <picture>
+                                <source srcset="./images/mobile-images/mobile__our-team-3@2x.jpg">
+                                <img class="team__img" src="./images/our-team/OurT-img3.jpg"alt="wooman">    
+                            </picture>
                             <div class="team__summarizing">
                                 <h3 class="team__name">Camila Garcia</h3>
                                 <p class="team__profesion">Marketing</p>
@@ -314,8 +334,11 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><img class="team__img" src="./images/our-team/OurT-img4.jpg"
-                                alt="men with short beard">
+                        <li>
+                            <picture>
+                                <source srcset="./images/mobile-images/mobile__our-team-4@2x.jpg">
+                                <img class="team__img" src="./images/our-team/OurT-img4.jpg" alt="men with short beard">    
+                            </picture>                            
                             <div class="team__summarizing">
                                 <h3 class="team__name">Daniel Wilson</h3>
                                 <p class="team__profesion">UI Designer</p>
@@ -523,9 +546,10 @@
                             <svg class="modal-checkbox-icon-svg">
                                 <use href="./images/sprite.svg#icon-modal-checkbox"></use>
                             </svg></span>
-                        I accept the terms and conditions of the&nbsp;<a class="form-privacy-policy-link"
-                            href="">Privacy
-                            Policy</a>
+                        <div class="modal-form-checbox-text-wrapper">
+                            I accept the terms and conditions of the&nbsp;<a class="form-privacy-policy-link"
+                                href="">Privacy Policy</a>
+                        </div>
                     </label>
                     <button class="form-submit-btn main-btn" type="submit">Send</button>
                 </form>
