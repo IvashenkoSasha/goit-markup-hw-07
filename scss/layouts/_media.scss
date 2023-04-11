@@ -174,11 +174,19 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding-right: 56px;
+  }
+
+  .footer__text {
+    text-align: start;
   }
 
   .footer__information {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 72px;
     margin-right: 24px;
+    align-content: start;
   }
 
   .footer-social-container {
@@ -194,7 +202,12 @@
 
   .subscribe-form {
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
+  }
+
+  .footer__container {
+    justify-content: start;
+    padding-left: 108px;
   }
 
   .subscribe-section {
@@ -305,11 +318,16 @@
 
   .footer {
     &__container {
-      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: nowrap;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 auto;
     }
 
     &-social-container {
       margin-right: 80px;
+      margin-bottom: 0;
     }
 
     &__information {

@@ -508,11 +508,15 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    max-width: 328px;
-    margin-left: 25px;
-    margin-right: 45px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: calc(100% - 36px);
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-column-gap: 56px;
+       -moz-column-gap: 56px;
+            column-gap: 56px;
   }
   .mobile-menu__social-logo {
     width: 24px;
@@ -745,12 +749,27 @@ address {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-right: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    text-align: start;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 72px;
     margin-right: 24px;
+    -ms-flex-line-pack: start;
+        align-content: start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -777,9 +796,17 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 108px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -891,12 +918,18 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .footer__container {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
   }
   .footer-social-container {
     margin-right: 80px;
+    margin-bottom: 0;
   }
   .footer__information {
     margin-bottom: 0;
